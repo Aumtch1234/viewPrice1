@@ -2,6 +2,7 @@ import React from 'react'
 import "./style.css"
 import AnchorTemporaryDrawer from './drawer'
 import Button from '../Button'
+import { Link } from 'react-router-dom'
 
 function Header() {
   return (
@@ -10,21 +11,21 @@ function Header() {
         ViewPrice<span style={{ color: "var(--grey)" }}>.</span>
       </h1>
       <div className='links'>
-        <a href='/'>
+        <Link to='/'>
           <p className='link'>Home</p>
-        </a>
-        <a href='/'>
+        </Link>
+        <Link to='/compare'>
           <p className='link'>Compare</p>
-        </a>
-        <a href='/'>
+        </Link>
+        <Link to='/watchlist'>
           <p className='link'>Watchlist</p>
-        </a>
-        <a href='#'>
+        </Link>
+        <Link to='/deshboard'>
           <Button 
             text={"Dashboard"}
             onClick={() => console.log("Btn Clicked")}
           />
-        </a>
+        </Link>
       </div>
 
       <div className='mobile-drawer'>
