@@ -8,7 +8,7 @@ function Header() {
   return (
     <div className='navbar'>
       <h1 className='logo'>
-        ViewPrice<span style={{ color: "var(--grey)" }}>.</span>
+        ViewPrice<span style={{ color: "var(--blue)" }}>.</span>
       </h1>
       <div className='links'>
         <Link to='/'>
